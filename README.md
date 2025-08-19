@@ -2,7 +2,7 @@
 
 
 ## Date story website
-To learn more about our work, please visit our webpage[Let us make the most popular beer🍺!](https://letusmakepopularbeer.streamlit.app/).
+To learn more about our work, please visit our webpage[Let us make the most popular beer!](https://letusmakepopularbeer.streamlit.app/).
 
 ## Abstract
 In this task, we aim to find out what is the trend in the **American beer market** as well as specified to specific regions. We will utilize statistical and time series modeling to analyze the trends and make some predictions, and employ sentiment analysis and natural language processing techniques to analyze consumer comments. Through this analysis, we aim to identify key trends in consumer preferences for different beer styles and understand how these preferences have evolved over time. Our findings will provide valuable insights for breweries and marketers in the industry seeking to better understand the changing preferences of beer drinkers.
