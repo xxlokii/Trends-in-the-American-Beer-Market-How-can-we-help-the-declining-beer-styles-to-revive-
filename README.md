@@ -13,7 +13,7 @@ many new brands and styles have been created. Meanwhile, a proportion of breweri
 trying to preserve their traditional brewing techniques.
 As a significant beer consumer, the United States plays a crucial role in the world’s beer
 industry. Therefore, with the curiosity about beer among Americans, let’s have an insight into
-their beer industry. After some research, we found that the website “BeerAdvocate.” users
+their beer industry. After some research, we found that the website “BeerAdvocate.�? users
 are mainly from the U.S., So we retrieved the user data, brewery data, and review data,
 ranging from 1998 to 2017, from the BeerAdvocate datase
 
@@ -72,30 +72,4 @@ Although the initial rating data was saved in text format, they were too big to 
 
   ![Alt Text](https://github.com/Weijun-H/ada-2022-project-letusnameagroup/blob/main/gif/+United%20States,%20California.gif?raw=true)
   
-
-
-
-## Proposed timeline
-
-- 15.11.22 Slice and preprocess the dataset
-- 18.11.22 Explore the factors associated with the beer ratings.
-- 18.11.22 **Milestone 2** deadline
-- 22.11.22 Pause project work.
-- 02.12.22 **Homework 2** deadline
-- 08.12.22 Begin developing a rough draft of the datastory.
-- 09.12.22 Finish Statistical tests
-- 11.12.22 Complete all code implementations and visualisations relevant to analysis.
-- 14.12.22 Complete datastory.
-- 21.12.22 Complete the website
-- 23.12.22 **Milestone 3** deadline
-
-
-## Organization within the team
-- datastory: member 1 & 2
-- website: member 3 & 4
-- Code implementation: Work together
-- Analysis: Group discussion
-    
-
-​    
 
