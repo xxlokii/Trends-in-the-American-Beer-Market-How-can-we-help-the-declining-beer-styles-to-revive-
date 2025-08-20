@@ -2,7 +2,7 @@
 
 
 ## Date story website
-To learn more about this project, please visit our webpage[Let us make the most popular beer!:smile:](https://letusmakepopularbeer.streamlit.app/).
+To learn more about this project, please visit our webpage[Let us make the most popular beer!]:beers:(https://letusmakepopularbeer.streamlit.app/).
 
 ## Abstract
 This analysis aims to investigate trends in the **American beer market**, with a focus on specific regions. The study will utilize statistical and time series models to analyze these trends and make predictions.
