@@ -2,7 +2,7 @@
 
 
 ## Date story website
-To learn more about this project, please visit our webpage[Let us make the most popular beer!](https://letusmakepopularbeer.streamlit.app/).
+To learn more about this project, please visit our webpage[Let us make the most popular beer!:smile:](https://letusmakepopularbeer.streamlit.app/).
 
 ## Abstract
 This analysis aims to investigate trends in the **American beer market**, with a focus on specific regions. The study will utilize statistical and time series models to analyze these trends and make predictions.
@@ -92,3 +92,10 @@ To ensure data quality, the dataset was cleaned based on the following criteria:
 - 14.12.22 Complete datastory.
 - 21.12.22 Complete the website
 - 23.12.22 **Milestone 3** deadline
+
+## Organization within the team
+- datastory: member 1 & 2
+- website: member 3 & 4
+- Code implementation: Work together
+- Analysis: Group discussion
+    
