@@ -2,34 +2,37 @@
 
 
 ## Date story website
-To learn more about our work, please visit our webpage[Let us make the most popular beer!](https://letusmakepopularbeer.streamlit.app/).
+To learn more about this project, please visit our webpage[Let us make the most popular beer!](https://letusmakepopularbeer.streamlit.app/).
 
 ## Abstract
-In this task, we aim to find out what is the trend in the **American beer market** as well as specified to specific regions. We will utilize statistical and time series modeling to analyze the trends and make some predictions, and employ sentiment analysis and natural language processing techniques to analyze consumer comments. Through this analysis, we aim to identify key trends in consumer preferences for different beer styles and understand how these preferences have evolved over time. Our findings will provide valuable insights for breweries and marketers in the industry seeking to better understand the changing preferences of beer drinkers.
+This analysis aims to investigate trends in the **American beer market**, with a focus on specific regions. The study will utilize statistical and time series models to analyze these trends and make predictions.
+
+Furthermore, sentiment analysis and natural language processing (NLP) techniques will be employed to analyze consumer comments. Through this process, the analysis will identify key trends in consumer preferences for different beer styles and show how these preferences have evolved over time. The findings will provide valuable insights for breweries and marketers in the industry, helping them to better understand the changing preferences of beer drinkers.
+
 
 ## Introduction
-Beer is one of the oldest beverages in the world. With the progress of brewing technology,
-many new brands and styles have been created. Meanwhile, a proportion of breweries are still
-trying to preserve their traditional brewing techniques.
-As a significant beer consumer, the United States plays a crucial role in the world’s beer
-industry. Therefore, with the curiosity about beer among Americans, let’s have an insight into
-their beer industry. After some research, we found that the website “BeerAdvocate.�? users
-are mainly from the U.S., So we retrieved the user data, brewery data, and review data,
-ranging from 1998 to 2017, from the BeerAdvocate datase
+Beer is one of the world's oldest beverages, a drink that continues to evolve. While modern technology has created countless new styles and brands, many breweries still honor and preserve traditional techniques.
+
+As a major global consumer, the United States plays a crucial role in the world's beer industry. To better understand the American beer landscape, we turned to data from BeerAdvocate, a popular website with a user base that is predominantly American. We retrieved user, brewery, and review data from the site's dataset, spanning from 1998 to 2017.
 
 ## Research questions
 ### 1. Identity the sentiments in users' reviews, and extract high-frequency words to obtain useful information.<br>
-We will investigate the influence of consumer reviews on changes in beer style trends and identify the qualities that the best-selling beer should possess in the eyes of consumers. We will also provide suggestions for beer production based on our findings.
+This analysis will investigate how consumer reviews influence beer style trends and identify the qualities that a best-selling beer should possess from a consumer perspective. Based on the findings, suggestions will be provided for beer production.
 
 ### 2. Data Visualization and Choose the popular beers<br>
-We will explore the changing trends in the popularity of the most popular beer styles in the United States from 1998 to 2017, as reflected in the number of reviews on BeerAdvocate. We will also examine the changing trends of the top 3 beer styles and make predictions about their future. Additionally, we will identify common characteristics shared by the top 3 beers.
+This study explores the evolving popularity of top U.S. beer styles from 1998 to 2017, using the number of reviews on BeerAdvocate as a metric. The analysis will also examine the trends of the top three styles, provide future predictions, and identify their shared characteristics.
 
 ### 3. Suggestions in Brewing Beer<br>
-To investigate the relationship between beer style preference and region, we will examine the trend of beer style preference in various regions over time and generate recommendations for breweries and sellers based on the results.
+An investigation into the relationship between beer style preference and region will be conducted. This will involve:
+
+- Trend Analysis: Examining the evolution of beer style preferences in various regions over time.
+
+- Data Compilation: Compiling relevant consumer preference data for regional beer trends.
+
+- Recommendations: Generating targeted suggestions for beer production to assist breweries and sellers.
 
 
-
-In this part, we conducting an analysis of consumer preferences for beer in different regions,then we have compiled all of the relevant data to provide suggestions for beer production based on our findings.
+An analysis of consumer preferences for beer in different regions was conducted. All relevant data has been compiled to provide suggestions for beer production based on the findings.
 
 
 ## Datasets
@@ -41,21 +44,24 @@ In this part, we conducting an analysis of consumer preferences for beer in diff
 Although the initial rating data was saved in text format, they were too big to parse and analyze. Before the analysis, we used Python bash to slice and prepare the data for CSV loading by pandas.
 
 **Clean Data**
-- We first find that nan values in ```overall``` coexists with ```['appearance', 'aroma', 'palate', 'taste', 'overall']```, We also checked the website manually and found that we should rate the appearance, aroma, palate, taste, and overall. So, these data are meaningless if all of these features are nan values. So we also deleted data like this.
-- Some reviews' *overall* scores are significant incompatible to the other 4 scores. For example, if the each of the 4 scores is less than 3, while the overall score is greater than 4, then we considered them to be invalid.
-- We will also delete the data without review text.
+To ensure data quality, the dataset was cleaned based on the following criteria:
+
+- Handling Missing Values: Reviews with a missing overall score were removed. A manual check of the BeerAdvocate website confirmed that valid reviews require all five ratings: appearance, aroma, palate, taste, and overall.
+
+- Filtering Inconsistent Data: Reviews with an inconsistent overall score were filtered out. For example, entries were considered invalid if the four component scores were all less than 3, but the overall score was greater than 4.
+
+- Excluding Blank Reviews: Reviews that lacked any accompanying review text were also removed.
 
 
 ## Analytic methods<br>
 
-- We initially conducted a statistical analysis on the pre-processed dataset to examine the relationship between the four scoring aspects and the overall score. Afterwards, we utilized a statistical model to further analyze the dataset in order to gain a better understanding of trends in consumer reviews of beer in the US beer market<br>
+- An initial statistical analysis of the pre-processed dataset was conducted to examine the relationship between the four component scores and the overall score. A statistical model was then applied to the data to gain a better understanding of consumer review trends in the U.S. beer market.<br>
 <img src="Image\2.png" />
 
 
-- Consumer reviews often contain valuable insights and opinions on different beers. In order to better understand consumer preferences and opinions, it is necessary to analyze these reviews. In this study, we used sentiment analysis and natural language processing techniques to analyze the tone and content of consumer reviews. We employed the SentimentIntensityAnalyzer module from the nltk library to identify the sentiment of consumer comments and identified the most frequently mentioned keywords by consumers. These findings provide important insights into consumer preferences and opinions on different beer styles.<br>
+- To gain insights into consumer preferences, sentiment analysis and natural language processing (NLP) techniques were applied to the beer reviews. Specifically, the SentimentIntensityAnalyzer module from the NLTK library was used to determine the sentiment of consumer comments.The analysis also identified the most frequently mentioned keywords, providing valuable insights into consumer opinions on different beer styles.<br>
 
   <img src="Image\4.png" width=350 height=280/> <img src="Image\6.png" width=350 height=280/>
-
 
 
 - Analyze the distribution of popular beers with respect to different characteristics and summarize their features. Afterwards, use data visualization techniques to select the most popular beers.<br>
@@ -64,12 +70,25 @@ Although the initial rating data was saved in text format, they were too big to 
 
 
 
-- we will perform a further analysis of the three most popular beers in the US market and use a time series model to forecast their future trends. To improve the accuracy of our predictions, we will utilize the time series prediction module in the sktime library.<br>
+- A further analysis will be performed on the three most popular beers in the U.S. market. A time series model will be used to forecast their future trends, with the sktime library's time series prediction module utilized to improve accuracy.<br>
 
   <img src="Image\8.png" /> 
 
-- To investigate the preferences of consumers in different regions for beer styles, we utilized the bar_chart_race library to dynamically visualize the changes in consumer preferences over time. This allowed us to gain a better understanding of the evolving preferences of beer drinkers in different regions.Combining all the above factors, we aprovide suggestions for beer production based on our findings.<br>
+- To investigate consumer preferences for beer styles in different regions, the bar_chart_race library was used to dynamically visualize how tastes have changed over time. This visualization provides a clearer understanding of evolving regional preferences, and combined with other findings, offers a basis for providing production suggestions.<br>
 
   ![Alt Text](https://github.com/Weijun-H/ada-2022-project-letusnameagroup/blob/main/gif/+United%20States,%20California.gif?raw=true)
   
 
+## Proposed timeline
+
+- 15.11.22 Slice and preprocess the dataset
+- 18.11.22 Explore the factors associated with the beer ratings.
+- 18.11.22 **Milestone 2** deadline
+- 22.11.22 Pause project work.
+- 02.12.22 **Homework 2** deadline
+- 08.12.22 Begin developing a rough draft of the datastory.
+- 09.12.22 Finish Statistical tests
+- 11.12.22 Complete all code implementations and visualisations relevant to analysis.
+- 14.12.22 Complete datastory.
+- 21.12.22 Complete the website
+- 23.12.22 **Milestone 3** deadline
